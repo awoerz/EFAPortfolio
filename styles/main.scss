@@ -1,20 +1,13 @@
 //Custom Styles
-//Video Hero Section
-#home {
+body {
 	position: relative;
-	min-height: 100vh;
-	width: 100vw;
+	overflow-y: auto;
 	overflow-x: hidden;
-	video {
-		width: auto;
-		margin: 0 auto;
-		object-fit: cover;
-		z-index: -1;
-	}
 }
+
 //Theme Colors:
-$darkblue: #272760;
-$darkpurple: #442768;
+$darkblue: #124c54;
+$darkpurple: #37195d;
 $pink: #ed1e79;
 $teal: #0cffe1;
 $blue: #0d6efd;
@@ -28,6 +21,8 @@ $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
 $darksalmon: #dfa876;
+$pop: #dfd676;
+$tealpop: #2a676f;
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -40,7 +35,7 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
-$primary: $darkblue;
+$primary: $darkpurple;
 $secondary: $darksalmon;
 $success: $green;
 $info: $cyan;
@@ -58,7 +53,9 @@ $theme-colors: (
 	'danger': $danger,
 	'light': $light,
 	'dark': $dark,
-	'pink': $pink
+	'pink': $pink,
+	'pop': $pop,
+	'tealpop': $tealpop
 );
 
 //Bootstrap Spacing Updates:
@@ -73,6 +70,48 @@ $spacers: (
 	5: $spacer * 3,
 	6: $spacer * 6
 );
+
+//Video Hero Section
+#home {
+	position: relative;
+	min-height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	video {
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.hero-content {
+		position: absolute;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(68, 39, 104, 0.24);
+		.hero-text-container {
+			.btn-container {
+				width: 50%;
+			}
+		}
+	}
+}
+
+//About Section
+#about {
+	position: relative;
+	min-height: 100vh;
+	width: 100vh;
+	.background-img-container {
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-height: 100%;
+			z-index: -1;
+		}
+	}
+}
 
 //customizing navbar colors (which was hard).
 $navbar-dark-color: rgba($darksalmon, 0.55);
