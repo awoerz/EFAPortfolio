@@ -1,13 +1,10 @@
-//Custom Styles
-body {
-	position: relative;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
 //Theme Colors:
 $darkblue: #124c54;
 $darkpurple: #37195d;
+$darksalmon: #dfa876;
+$darksalmonShifted: #f3b071;
+$pop: #dfd676;
+$tealpop: #2a676f;
 $pink: #ed1e79;
 $teal: #0cffe1;
 $blue: #0d6efd;
@@ -20,9 +17,6 @@ $yellow: #ffc107;
 $green: #198754;
 $teal: #20c997;
 $cyan: #0dcaf0;
-$darksalmon: #dfa876;
-$pop: #dfd676;
-$tealpop: #2a676f;
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -101,7 +95,7 @@ $spacers: (
 #about {
 	position: relative;
 	min-height: 100vh;
-	width: 100vh;
+	width: 100vw;
 	.background-img-container {
 		img {
 			position: absolute;
@@ -116,9 +110,9 @@ $spacers: (
 //customizing navbar colors (which was hard).
 $navbar-dark-color: rgba($darksalmon, 0.55);
 $navbar-dark-hover-color: rgba($darksalmon, 0.75) !default;
-$navbar-dark-active-color: $darksalmon !default;
+$navbar-dark-active-color: $darksalmonShifted !default;
 $navbar-dark-disabled-color: rgba($darksalmon, 0.25) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color: rgba($darksalmon, 0.1) !default;
 
-@import '../bootstrap/scss/bootstrap.scss';
+@import '../bootstrap-5.1.1/scss/bootstrap.scss';
