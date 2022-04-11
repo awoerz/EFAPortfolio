@@ -27,6 +27,18 @@
   min-height: 100vh;
   width: 100vw;
 }
+#about .circle-container {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgba(55, 25, 93, 0.6);
+  overflow: hidden;
+  margin: 0 auto;
+}
+#about .circle-container img {
+  margin-top: 20px;
+  height: 100%;
+}
 
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)

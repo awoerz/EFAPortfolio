@@ -96,6 +96,18 @@ $spacers: (
 	position: relative;
 	min-height: 100vh;
 	width: 100vw;
+	.circle-container {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		background-color: rgba(55, 25, 93, 0.6);
+		overflow: hidden;
+		margin: 0 auto;
+		img {
+			margin-top: 20px;
+			height: 100%;
+		}
+	}
 }
 
 //customizing navbar colors (which was hard).

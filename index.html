@@ -119,25 +119,42 @@
 		</div>
 
 		<!--About Me Section-->
-		<div id="about" class="py-6">
+		<div id="about" class="py-6 d-flex align-items-center">
 			<div class="container">
-				<div class="about-text col-md-4">
-					<h1>Who Am I?</h1>
-					<br />
-					<p>
-						I’m a husband, dad, programmer and nerd. I am currently working as a functional systems analyst in a
-						technical capacity. I have been learning software development and engineering in my free time and as a
-						student since 2015. It was in 2015, at 25 years-old, that I found myself stagnant and wanting to learn
-						something new. I wanted to learn something useful, challenging and fun. At the time, I had no undergraduate
-						experience at an accredited college. So I decided to enroll at IUPUI (Indiana University - Purdue University
-						Indianapolis) as a part-time student. I chose to study Computer Science because it seemed to fit all the
-						criteria I was looking for but most of all would be fun. In 2021, I had a friend that recently finished a
-						coding bootcamp at Eleven Fifty Academy. I saw the tremendous progress he made from nothing to making
-						excellent projects in just six months. Due to this, I decided to take a semester away from school and attend
-						the part time software development bootcamp. My time at Eleven Fifty has been challenging, rewarding and
-						fun. Now, I am dedicated to continuing my path to becoming a full-time software engineer as both a hobby and
-						a profession.
-					</p>
+				<div class="row">
+					<div class="circle-container d-flex justify-content-center">
+						<img src="./images/IMG_3940.png" alt="my-face" />
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-md-6">
+						<h3>About Me</h3>
+					</div>
+					<div class="col-md-6">
+						<h3>Experience</h3>
+					</div>
+				</div>
+				<div class="row about-row">
+					<div class="about-text col-md-5">
+						<p>
+							I’m a husband, dad, programmer and nerd. I am currently working as a functional systems analyst in a
+							technical capacity. I have been learning software development and software engineering in my free time and
+							as a student since 2015. It was in 2015, at 25 years-old, that I found myself stagnant and wanting to
+							learn something new. I wanted to learn something useful, challenging and fun. At the time, I had no
+							undergraduate experience at an accredited college. So I decided to enroll at IUPUI (Indiana University -
+							Purdue University Indianapolis) as a part-time student. I chose to study Computer Science because it
+							seemed to fit all the criteria I was looking for but most of all would be fun. In 2021, I had a friend
+							that recently finished a coding bootcamp at Eleven Fifty Academy. I saw the tremendous progress he made
+							from knowing nothing to making excellent projects in ASP.Net in just six months. Due to this, I decided to
+							take a semester away from school and attend the part time software development bootcamp. My time at Eleven
+							Fifty has been challenging, rewarding and fun. Now, I am dedicated to continuing my path to becoming a
+							full-time software engineer as both a hobby and a profession.
+						</p>
+					</div>
+					<span class="col-md-1"></span>
+					<div class="chart col-md-6 d-flex flex-column justify-content-center">
+						<canvas id="experience"> </canvas>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -146,13 +163,11 @@
 		<div class="bg-primary py-6" id="projects" style="min-height: 100vh; width: 100%">
 			<div class="container d-sm-flex justify-content-evenly">
 				<div class="card m-4" style="max-width: 18rem">
-					<img src="..." class="card-img-top" alt="..." />
+					<img src="images/ConnectorGif.gif" class="card-img-top" alt="..." />
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">
-							Some quick example text to build on the card title and make up the bulk of the card's content.
-						</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<h5 class="card-title">Connector</h5>
+						<p class="card-text">Connector is a simple to use CRM (Customer Relationship Manager) project</p>
+						<a href="https://azconnector.azurewebsites.net/" target="blank" class="btn btn-primary">Connect Home</a>
 					</div>
 				</div>
 				<div class="card m-4" style="max-width: 18rem">
@@ -223,5 +238,8 @@
 
 		<!--Bootstrap-->
 		<script src="./scripts/bootstrap.bundle.js"></script>
+		<!--Chart JS-->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+		<script src="./scripts/scripts.js"></script>
 	</body>
 </html>
