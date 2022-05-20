@@ -110,6 +110,113 @@ $spacers: (
 	}
 }
 
+#projects {
+	.project-box {
+		background-size: cover;
+		background-position: center;
+		height: 15rem;
+		width: 24rem;
+		margin: 10px;
+		padding: 0;
+		border-radius: 5px;
+		&:hover {
+			.overlay-box {
+			  animation: overlay .5s ease 1;
+			  animation-fill-mode: forwards;
+			}
+		}
+		.overlay-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			background-color: rgba(255, 255, 255, .5);
+			height: 0;
+			animation: reverseOverlay .5s ease;
+			&:hover .project-modal-link {
+				animation: fadeIn .5s ease 1;
+				animation-fill-mode: forwards;
+			}
+			.project-modal-link {
+				height: fit-content;
+				opacity: 0%;
+				padding: 5px;
+				border-radius: 5px;
+				animation: reverseFadeIn .5s ease;
+			}
+		}
+	}
+}
+
+.modal-header {
+	background-size: cover;
+	height: 300px;
+}
+
+.connector-box {
+	background-image: url("../images/ConnectScreenshot.png");
+}
+
+.connector-header {
+	background-image: url(../images/ConnectorGif.gif);
+}
+
+.sstatic-box {
+	background-image: url("../images/FFVIIFPSS.png");
+}
+
+.sstatic-header {
+	background-image: url(../images/FFVIIFPGif.gif);
+}
+
+.bs5-box {
+	background-image: url("../images/BS5DemoSS.png");
+}
+
+.bs5-header {
+	background-image: url(../images/BS5DemoGif.gif);
+}
+
+
+@keyframes overlay {
+	0% {
+	  height: 0;
+	}
+	100% {
+	  height: 100%;
+	}
+  }
+  @keyframes reverseOverlay {
+	from {
+	  height: 100%;
+	}
+	to {
+	  height: 0;
+	}
+  }
+  @keyframes fadeIn {
+	0% {
+		height: 0%;
+	}
+	40% {
+		height: 100%;
+	}
+	50% {
+	  opacity: 0%;
+	}
+	100% {
+	  opacity: 100%;
+	}
+  }
+  @keyframes reverseFadeIn {
+	50% {
+	  opacity: 0%;
+	}
+	100% {
+	  opacity: 0%;
+	}
+  }
+
 //customizing navbar colors (which was hard).
 $navbar-dark-color: rgba($darksalmon, 0.55);
 $navbar-dark-hover-color: rgba($darksalmon, 0.75) !default;
@@ -118,4 +225,4 @@ $navbar-dark-disabled-color: rgba($darksalmon, 0.25) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color: rgba($darksalmon, 0.1) !default;
 
-@import '../bootstrap-5.1.1/scss/bootstrap.scss';
+@import '../bootstrap-5.2.0-beta1/scss/bootstrap.scss';
