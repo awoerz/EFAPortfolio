@@ -115,14 +115,18 @@ $spacers: (
 		background-size: cover;
 		background-position: center;
 		height: 15rem;
-		width: 24rem;
-		margin: 10px;
+		min-width: 23rem;
+		margin: 20px;
 		padding: 0;
 		border-radius: 5px;
 		&:hover {
 			.overlay-box {
-			  animation: overlay .5s ease 1;
-			  animation-fill-mode: forwards;
+				animation: overlay .5s ease 1;
+				animation-fill-mode: forwards;
+				.project-modal-link {
+					animation: fadeIn .5s ease 1;
+					animation-fill-mode: forwards;
+				}
 			}
 		}
 		.overlay-box {
@@ -133,10 +137,6 @@ $spacers: (
 			background-color: rgba(255, 255, 255, .5);
 			height: 0;
 			animation: reverseOverlay .5s ease;
-			&:hover .project-modal-link {
-				animation: fadeIn .5s ease 1;
-				animation-fill-mode: forwards;
-			}
 			.project-modal-link {
 				height: fit-content;
 				opacity: 0%;
