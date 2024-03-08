@@ -65,6 +65,10 @@ $spacers: (
 	6: $spacer * 6
 );
 
+@mixin for-big-desktop-up {
+	@media (min-width: 1800px) { @content; }
+}
+
 //Video Hero Section
 #home {
 	position: relative;
@@ -76,6 +80,9 @@ $spacers: (
 		top: 0;
 		left: 0;
 		z-index: -1;
+		@media (min-width: 1800px) {
+			width: 100%;
+		}
 	}
 	.hero-content {
 		position: absolute;
@@ -232,4 +239,4 @@ $navbar-dark-disabled-color: rgba($darksalmon, 0.25) !default;
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color: rgba($darksalmon, 0.1) !default;
 
-@import '../bootstrap-5.2.0-beta1/scss/bootstrap.scss';
+@import '../bootstrap-5.3.3/scss/bootstrap.scss'
